@@ -10,6 +10,7 @@ docker run -d \
   -e B2_ACCOUNT_KEY="baz" \
   -v "./backblaze.gpg.asc:/backblaze.gpg.asc" \
   -v "./backblaze.secret.gpg.asc:/backblaze.secret.gpg.asc" \
+  ghcr.io/sgsunder/zfsbackup-go:latest \
   send --jsonOutput \
   --publicKeyRingPath /backblaze.gpg.asc \
   --secretKeyRingPath /backblaze.secret.gpg.asc \
