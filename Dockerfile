@@ -16,5 +16,5 @@ LABEL \
     org.opencontainers.image.title="ghcr.io/sgsunder/zfsbackup-go" \
     org.opencontainers.image.url="https://github.com/sgsunder/zfsbackup-go-docker" \
     org.opencontainers.image.created="${BUILD_DATE}" \
-    org.opencontainers.image.source="hhttps://github.com/sgsunder/zfsbackup-go-docker" \
+    org.opencontainers.image.source="https://github.com/sgsunder/zfsbackup-go-docker" \
     org.opencontainers.image.licenses="MIT"
