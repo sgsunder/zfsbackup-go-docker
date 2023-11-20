@@ -8,7 +8,8 @@ RUN go build
 FROM alpine:latest
 RUN apk --no-cache add zfs
 COPY --from=builder /go/src/app/zfsbackup-go /usr/local/bin/zfsbackup-go
-ENTRYPOINT [ "/usr/local/bin/zfsbackup-go" ]
+COPY ./entrypoint.sh /usr/local/bin/entrypoint
+ENTRYPOINT [ "/usr/local/bin/entrypoint" ]
 
 ARG BUILD_DATE="Unknown"
 LABEL \
